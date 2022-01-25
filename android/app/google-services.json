@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657186682870",
+    "firebase_url": "https://simple-accounting-d2eed-default-rtdb.firebaseio.com",
+    "project_id": "simple-accounting-d2eed",
+    "storage_bucket": "simple-accounting-d2eed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657186682870:android:b47f846c26eb033306f9d7",
+        "android_client_info": {
+          "package_name": "com.desharky.services_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657186682870-5u3k26ia5fh12ti9qhm80f3tdbc0a5b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsVLWb34tcCWU7lZJos58q95d5TzdedI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657186682870-5u3k26ia5fh12ti9qhm80f3tdbc0a5b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
