@@ -12,4 +12,6 @@ class StylesSet {
       );
 
   static TextStyle get textInputLabel => defaultStyle.copyWith(color: ColorsSet.greyLabel);
+
+  static TextStyle get error => defaultStyle.copyWith(color: Colors.red);
 }

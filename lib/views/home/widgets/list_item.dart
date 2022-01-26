@@ -6,8 +6,9 @@ class ListItem extends StatelessWidget {
   final int id;
   final String surname;
   final String name;
+  final String phone;
 
-  const ListItem({this.id = 0, this.surname = '', this.name = ''});
+  const ListItem({this.id = 0, this.surname = '', this.name = '', this.phone = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +22,8 @@ class ListItem extends StatelessWidget {
           Text(surname),
           SizedBox(width: 5.w),
           Text(name),
+          SizedBox(width: 5.w),
+          Text(phone),
         ],
       ),
     );

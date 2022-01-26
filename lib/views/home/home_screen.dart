@@ -19,12 +19,12 @@ class HomeScreen extends StatelessWidget {
         child: FirebaseAnimatedList(
           itemBuilder: (BuildContext context, DataSnapshot snapshot, Animation<double> animation, int idx) {
             return ListItem(
-              id: int.parse(snapshot.key!),
+              id: idx,
               surname: snapshot.child('surname').value.toString(),
               name: snapshot.child('name').value.toString(),
             );
           },
-          query: controller.ref,
+          query: controller.ref.child('Orders'),
         ),
       ),
       floatingActionButton: AddButton(action: () => controller.addItem()),

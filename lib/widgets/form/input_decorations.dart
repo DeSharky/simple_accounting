@@ -8,12 +8,13 @@ class InputContainer extends StatelessWidget {
 
   const InputContainer({required this.child});
 
-  static InputDecoration inputField(String label) => InputDecoration(
+  static InputDecoration inputField(String label, {String? errorText}) => InputDecoration(
     labelText: label,
     labelStyle: StylesSet.textInputLabel,
     floatingLabelBehavior: FloatingLabelBehavior.always,
     border: InputBorder.none,
     isDense: true,
+    errorText: errorText,
   );
 
   @override

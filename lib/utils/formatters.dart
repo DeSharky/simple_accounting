@@ -4,7 +4,7 @@ class Formatters {
   Formatters._();
 
   static final phone = MaskTextInputFormatter(
-    mask: '+7 (###) ###-##-##',
+    mask: '8-###-###-##-##',
     filter: {"#": RegExp('[0-9]')},
   );
 
@@ -19,7 +19,17 @@ class Formatters {
     filter: {"#": RegExp('[a-zA-Z0-9]')},
   );
 
-  static final fio = MaskTextInputFormatter(
+  static final firstName = MaskTextInputFormatter(
+    mask: '#############################',
+    filter: {"#": RegExp('[a-zA-Z0-9\u0401\u0451\u0410-\u044f]')},
+  );
+
+  static final secondName = MaskTextInputFormatter(
+    mask: '#############################',
+    filter: {"#": RegExp('[a-zA-Z0-9\u0401\u0451\u0410-\u044f]')},
+  );
+
+  static final patronymic = MaskTextInputFormatter(
     mask: '#############################',
     filter: {"#": RegExp('[a-zA-Z0-9\u0401\u0451\u0410-\u044f]')},
   );
