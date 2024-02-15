@@ -37,3 +37,9 @@ jobs:
       # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
         run: dart analyze
+      - run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v1
+        with:
+         name: APK
+         path: build/app/outputs/apk/dev/debug/apk_sa.apk
